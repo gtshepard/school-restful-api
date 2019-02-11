@@ -8,4 +8,8 @@
 ###How To Run This program 
 	- pipevn lock
 	- export FLASK_APP=app.y 
-	- flask run  
+	- flask run 
+
+###Database Configuration 
+	- must install postgreSQL and set up a role in the database 
+	- in app.py file set your username and password for connection to the database
