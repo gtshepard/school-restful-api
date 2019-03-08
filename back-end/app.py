@@ -5,8 +5,8 @@ import sys
 import psycopg2
 
 hostname = 'localhost'
-username = 'username'
-password = 'password'
+username = 'garrison'
+password = 'Gt$092894'
 database = 'myschool'
 
 app = Flask(__name__)

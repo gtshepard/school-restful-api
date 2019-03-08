@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 psycopg2 = "*"
 flask = "*"
+lock = "*"
 
 [requires]
 python_version = "3.6"
