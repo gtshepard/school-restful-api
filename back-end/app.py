@@ -55,7 +55,9 @@ def take_course():
 def get_students():
     current.execute("SELECT * FROM student")
     db_response = current.fetchall()
-    return jsonify({'students': db_response})
+    response = jsonify({'students': db_response})
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
 
 @app.route('/school/api/v1.0/students/<int:student_id>', methods=['GET'])
 def get_student(student_id):

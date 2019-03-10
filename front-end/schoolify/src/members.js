@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 
-
 const API = 'http://localhost:5000/school/api/v1.0/';
 const QUERY = 'students';
 
@@ -14,18 +13,18 @@ class Members extends Component {
 
   componentDidMount(){
     fetch(API + QUERY)
-      .then(response => console.log(response.json()))
-      .then(data => this.setState({students: data.students}));
+      .then(response => response.json())
+      .then(data =>this.setState({students: data.students}));
   }
-
 
   render() {
     const {students} = this.state;
     return (
-      <ul>
+
+      <ul className="member">
         {students.map(student => 
             <li key={student.objectID}>
-               {student[0][0]}              
+              <a href="">{student[1]}  {student[2]} </a>
             </li>
         )} 
       </ul>

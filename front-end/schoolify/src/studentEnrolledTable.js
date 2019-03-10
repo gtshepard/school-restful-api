@@ -10,8 +10,8 @@ const StudentEnrolledTable = () => {
             <li> Bonjour </li>
             <li> Je suis desole </li>
             <li> vous avez un pan</li>
-          </ul>
-         <StudentData />*/}
+          </ul>*/}
+         <StudentData />
          <Members />
       </div> 
     </div>
