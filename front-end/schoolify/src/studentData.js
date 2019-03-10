@@ -1,7 +1,7 @@
 import React, {Component}from 'react'
 
 const API = 'https://hn.algolia.com/api/v1/search?query=';
-const DEFAULT_QUERY = 'redux';
+const DEFAULT_QUERY = 'school';
 class StudentData extends Component {
 
   constructor(props){ 
