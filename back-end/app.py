@@ -9,9 +9,13 @@ username = 'garrison'
 password = 'Gt$092894'
 database = 'myschool'
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='')
 my_connection = psycopg2.connect( host=hostname, user=username, password=password, dbname=database)
 current = my_connection.cursor()
+
+@app.route('/')
+def root():
+    return app.send_static_file('App.js')
 
 #CREATE
 @app.route('/school/api/v1.0/students/', methods=['POST'])
