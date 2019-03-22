@@ -1,8 +1,15 @@
 ## Schoolify 
-- Full Stack Application Developed by Garrison Shepard
-	- ReactJS + Flask + psycopg2 + PostgreSQL
-- Still in active development 
 
+### What is Schoolify ?
+- Schoolify is a one stop article shop for tech students where
+there are links to articles about whats happening in the tech world regardignng students 
+and displays a schoolify member list.
+
+- Full Stack Web Application Developed by Garrison Shepard
+	- ReactJS + Flask + psycopg2 + PostgreSQL
+
+- Still in active development 
+- updates coming soon: personalized feeds for each member 
 
 ### Schoolify Front End 
 - ReactJs project
